@@ -4,4 +4,4 @@ require_relative "../lib/environment"
 
 puts "Hello!"
 
-GoHiking::ApiManager.hike_info
+r = GoHiking::ApiManager.new.hike_info
