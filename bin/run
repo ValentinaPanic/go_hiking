@@ -4,4 +4,6 @@ require_relative "../lib/environment"
 
 puts "Hello!"
 
-r = GoHiking::ApiManager.new.hike_info
+GoHiking::ApiManager.hike_info
+
+# binding.pry
