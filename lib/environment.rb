@@ -5,6 +5,8 @@ require "httparty"
 # require "json"
 require_relative "./api_manager"
 require_relative "./hike"
+require_relative "./cli"
+
 
 
 module GoHiking
