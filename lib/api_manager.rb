@@ -6,7 +6,22 @@ class GoHiking::ApiManager
         response = HTTParty.get(url)
         hikes_array = response["trails"]
         GoHiking::Hike.create_from_api(hikes_array)
+        
+       
+    end
+    def self.get_hike_details(hike_obj)
+        url = URI.parse(URL)
+        response = HTTParty.get(url)
+        res = response["trails"]
+        res.each do |h|
+        hike_obj.location = h["location"]
+        hike_obj.summary = h["summary"]
+        hike_obj.difficulty = h["difficulty"]
+        hike_obj.url = h["url"]
+        hike_obj.hike_length = h["length"]
         # binding.pry
+        end
+
     end
 
 end
