@@ -31,7 +31,10 @@ class GoHiking::CLI
     def hike_details(inp)
         hike_obj = GoHiking::Hike.all[inp]
         GoHiking::ApiManager.get_hike_details(hike_obj)
-        binding.pry
+      
+        puts  hike_obj.full_details
+        puts "Press any key to continue your search..."
+        gets
         
     end
     def menu

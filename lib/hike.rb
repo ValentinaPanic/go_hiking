@@ -20,5 +20,16 @@ class GoHiking::Hike
     def save
         @@all << self
     end
+    def full_details
+        <<-DESC
+     Name: #{self.name}
+     Location: #{self.location}
+     Difficulty: #{self.difficulty}
+     Trail Length: #{self.hike_length}
+     Summary: #{self.summary}
+     You can see more information on the following url: #{self.url}
+        
+        DESC
+    end
 
 end
