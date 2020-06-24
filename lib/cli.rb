@@ -6,14 +6,14 @@ class GoHiking::CLI
         main_loop
     end
     def introduction
-        puts "\nWelcome to Go Hiking App!\n"
+        puts "\nWelcome to Go Hiking App!\n\n"
     end
     def get_hike_info
         GoHiking::ApiManager.hike_info
     end
 
     def main_loop
-        # puts "\nHere is the list of trails:\n\n"
+        
        loop do
         menu
         input = trail_choice
@@ -33,7 +33,7 @@ class GoHiking::CLI
         GoHiking::ApiManager.get_hike_details(hike_obj)
       
         puts  hike_obj.full_details
-        puts "Press any key to continue your search..."
+        puts "\n\nPress any key to continue your search...\n"
         gets
         
     end
@@ -43,6 +43,7 @@ class GoHiking::CLI
         
     end
     def display_trails
+       
      trails = GoHiking::Hike.all
      trails.each.with_index(1) do |trail,index|
         puts "#{index}. #{trail.name}"
@@ -56,13 +57,13 @@ class GoHiking::CLI
             return input
             # binding.pry
         else
-            puts "Your input doesn't match our data!"
+            puts "\n\nYour input doesn't match our data!\n\n"
             return "invalid"
         end
     end
     def display_instructions
         puts <<-INST
-Choose a trail by number or type "exit" to exit the program!
+\nChoose a trail by number or type "exit" to exit the program!\n
         INST
     end
 

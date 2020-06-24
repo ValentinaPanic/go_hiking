@@ -1,8 +1,6 @@
 # GoHiking
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/go_hiking`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to the GoHiking Gem! This gem was developed as a Flatiron School project. I developed this gem to help users explore Colorado hiking trails  through a command line interface. This gem allows the user to view a list of trails 25 miles from Denver and shows details about each one of them once the user chooses desired trail.
 
 ## Installation
 
@@ -22,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Execute the bin file './bin/run'. You will be prompted with a list of the trails. Once you chose a number of desired trail, full-detailed description will be shown to you.
 
 ## Development
 
@@ -32,7 +30,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/go_hiking. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/go_hiking/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/ValentinaPanic/go_hiking. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/ValentinaPanic/go_hiking/blob/master/CODE_OF_CONDUCT.md).
 
 
 ## License
@@ -41,4 +39,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the GoHiking project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/go_hiking/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the GoHiking project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/ValentinaPanic/go_hiking/blob/master/CODE_OF_CONDUCT.md).
