@@ -1,5 +1,5 @@
 require_relative './go_hiking/version.rb'
-require "pry"
+# require "pry"
 require "httparty"
 
 require_relative "./api_manager"

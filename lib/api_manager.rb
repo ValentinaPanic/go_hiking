@@ -19,7 +19,7 @@ class GoHiking::ApiManager
         hike_obj.difficulty = h["difficulty"]
         hike_obj.url = h["url"]
         hike_obj.hike_length = h["length"]
-        # binding.pry
+        
         end
 
     end

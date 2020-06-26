@@ -55,7 +55,7 @@ class GoHiking::CLI
         return input if input == "exit"
         if input.to_i.between?(0, GoHiking::Hike.all.length)
             return input
-            # binding.pry
+           
         else
             puts "\n\nYour input doesn't match our data!\n\n"
             return "invalid"

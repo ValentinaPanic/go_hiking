@@ -27,7 +27,7 @@ class GoHiking::Hike
      Difficulty: #{self.difficulty}
      Trail Length: #{self.hike_length}
      Summary: #{self.summary}
-     You can see more information on the following url: #{self.url}
+     You can see more information on the following URL: #{self.url}
         
         DESC
     end
