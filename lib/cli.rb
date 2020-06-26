@@ -29,7 +29,7 @@ class GoHiking::CLI
        
     end
     def hike_details(inp)
-        hike_obj = GoHiking::Hike.all[inp]
+        hike_obj = GoHiking::Hike.all[inp-1]
         GoHiking::ApiManager.get_hike_details(hike_obj)
       
         puts  hike_obj.full_details
@@ -45,15 +45,15 @@ class GoHiking::CLI
     def display_trails
        
      trails = GoHiking::Hike.all
-     trails.each.with_index(1) do |trail,index|
-        puts "#{index}. #{trail.name}"
+     trails.each_with_index do |trail,index|
+        puts "#{index + 1}. #{trail.name}"
      end
     
     end
     def trail_choice
         input = gets.strip
         return input if input == "exit"
-        if input.to_i.between?(1, GoHiking::Hike.all.length)
+        if input.to_i.between?(0, GoHiking::Hike.all.length)
             return input
             # binding.pry
         else
@@ -63,7 +63,9 @@ class GoHiking::CLI
     end
     def display_instructions
         puts <<-INST
-\nChoose a trail by number or type "exit" to exit the program!\n
+
+Choose a trail by number or type "exit" to exit the program!
+
         INST
     end
 
